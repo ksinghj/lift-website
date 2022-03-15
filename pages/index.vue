@@ -1,13 +1,13 @@
 <template>
-  <LiftLogo />
+  <Header />
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import LiftLogo from '~/components/LiftLogo.vue'
+import Header from '~/components/layout/Header.vue'
 
 export default Vue.extend({
   name: 'HomePage',
-  components: { LiftLogo }
+  components: { Header }
 })
 </script>
