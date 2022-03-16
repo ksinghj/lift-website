@@ -1,6 +1,7 @@
 {
   "extends": ["@nuxtjs/eslint-config-typescript"],
   "rules": {
-    "comma-dangle": ["warn", "never"]
+    "comma-dangle": ["warn", "never"],
+    "vue/require-default-prop": "off"
   }
 }
