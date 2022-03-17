@@ -2,6 +2,7 @@
   "extends": ["@nuxtjs/eslint-config-typescript"],
   "rules": {
     "comma-dangle": ["warn", "never"],
-    "vue/require-default-prop": "off"
+    "vue/require-default-prop": "off",
+    "vue/attribute-hyphenation": "off"
   }
 }

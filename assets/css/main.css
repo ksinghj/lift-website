@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* fix disappearing text 👻 */
+.text-gradient {
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}

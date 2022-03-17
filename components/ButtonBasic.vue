@@ -6,10 +6,17 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { Prop } from 'vue/types/options'
+
+type ClassName = string | Array<any>
+
 export default Vue.extend({
   props: {
+    /**
+     * classes applied to base button element
+     */
     classNames: {
-      type: String,
+      type: Array as Prop<ClassName>,
       required: false
     }
   }

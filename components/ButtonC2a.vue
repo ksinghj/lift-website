@@ -1,5 +1,5 @@
 <template>
-  <ButtonBasic class-names="flex flex-row items-center bg-gradient-to-r from-lift-green to-lift-teal text-black uppercase font-bold max-h-10 justify-self-center">
+  <ButtonBasic :classNames="['flex flex-row items-center bg-gradient-to-r from-lift-green to-lift-teal text-black uppercase font-bold max-h-10', classNames]">
     Try for free <img class="pl-2 h-4" src="../static/icons/arrow.svg">
   </ButtonBasic>
 </template>
@@ -11,6 +11,12 @@ import ButtonBasic from './ButtonBasic.vue'
 export default Vue.extend({
   components: {
     ButtonBasic
+  },
+  props: {
+    classNames: {
+      type: String,
+      required: false
+    }
   }
 })
 </script>
