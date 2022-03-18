@@ -14,8 +14,8 @@
       <img class="w-2/3 sm:w-2/5 md:w-1/3 lg:max-w-xs self-center" src="../static/iphone-progress.png" alt="iPhone showing LIFT app in use">
     </div>
     <footer class="flex flex-col items-center mt-24 bg-wave bg-cover bg-no-repeat">
-      <img class="shadow w-24 rounded-xl" src="../static/icon.png">
-      <p class="text-center text-white pt-5">
+      <img class="shadow w-24 rounded-xl lg:mt-24 xl:mt-28 2xl:mt-36" src="../static/icon.png">
+      <p class="text-center text-white font-semibold py-5">
         Available on
       </p>
       <div class="flex flex-row justify-center pb-3">

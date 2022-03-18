@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row justify-between items-center md:first:ml-5 lg:first:ml-8 lg:first:mt-4 last:mr-5 p-3">
+  <div class="flex flex-row justify-between items-center md:first:ml-5 lg:first:ml-8 lg:first:pt-4 last:mr-5 p-3">
     <LiftLogo />
     <ButtonC2a />
   </div>
