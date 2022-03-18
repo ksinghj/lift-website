@@ -18,6 +18,9 @@ module.exports = {
         // for the linear green/teal (LIFT green used in app)
         'lift-green': '#00FF47',
         'lift-teal': '#3FFFDC'
+      },
+      backgroundImage: {
+        wave: "url('wave.svg')"
       }
     }
   },
