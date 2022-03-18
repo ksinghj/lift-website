@@ -34,8 +34,6 @@
 <script lang="ts">
 import Vue from 'vue'
 
-// import store from '../store'
-
 import Header from '~/components/layout/Header.vue'
 import ButtonC2a from '~/components/ButtonC2a.vue'
 import TextGradient from '~/components/TextGradient.vue'
@@ -48,6 +46,9 @@ export default Vue.extend({
   data () {
     return {
       showModal () {
+        const modal = document.querySelector('.modal') as HTMLElement
+        modal.style.top = `${window.scrollY}px`
+
         document.querySelector('body')?.classList.add('modal--show')
         document.querySelector('.modal')?.classList.remove('hidden')
       },
