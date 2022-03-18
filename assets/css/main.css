@@ -8,11 +8,6 @@
     -webkit-box-decoration-break: clone;
 }
 
-body {
-    /* darker green to emphasise c2a buttons */
-    background-color: #7DED68;
-}
-
 /* shadow on footer background image */
 footer {
     -webkit-filter: drop-shadow( -5px -5px 5px #e3e3e3 );

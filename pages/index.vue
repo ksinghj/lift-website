@@ -1,5 +1,5 @@
 <template>
-  <div class="root-div bg-white">
+  <div class="root-div">
     <Header />
     <div class="flex flex-col mt-4 sm:flex-row sm:mt-20 sm:mx-24 md:justify-center md:mt-32">
       <div class="grid gap-y-8 mx-6 lg:mr-32 lg:max-h-96 md:max-w-md">
