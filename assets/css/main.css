@@ -23,7 +23,3 @@ footer {
 body.modal--show {
     overflow: hidden;
 }
-
-body.modal--show ~ .modal {
-    display: block;
-}

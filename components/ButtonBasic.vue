@@ -1,5 +1,5 @@
 <template>
-  <button :class="['rounded-full p-3', classNames]">
+  <button :class="['rounded-full p-3', classNames]" @click="onClickFn()">
     <slot />
   </button>
 </template>
@@ -17,6 +17,10 @@ export default Vue.extend({
      */
     classNames: {
       type: Array as Prop<ClassName>,
+      required: false
+    },
+    onClickFn: {
+      type: Function,
       required: false
     }
   }

@@ -33,6 +33,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
+// import store from '../store'
+
 import Header from '~/components/layout/Header.vue'
 import ButtonC2a from '~/components/ButtonC2a.vue'
 import TextGradient from '~/components/TextGradient.vue'
@@ -41,6 +44,26 @@ import AppStoreLinks from '~/components/AppStoreLinks.vue'
 
 export default Vue.extend({
   name: 'HomePage',
-  components: { Header, ButtonC2a, TextGradient, Modal, AppStoreLinks }
+  components: { Header, ButtonC2a, TextGradient, Modal, AppStoreLinks },
+  data () {
+    return {
+      showModal () {
+        document.querySelector('body')?.classList.add('modal--show')
+        document.querySelector('.modal')?.classList.remove('hidden')
+      },
+      closeModal () {
+        document.querySelector('body')?.classList.remove('modal--show')
+        document.querySelector('.modal')?.classList.add('hidden')
+      }
+    }
+  },
+  mounted () {
+    this.$root.$on('modalOpen', () => {
+      this.showModal()
+    })
+    this.$root.$on('modalClose', () => {
+      this.closeModal()
+    })
+  }
 })
 </script>
